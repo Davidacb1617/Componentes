@@ -1,0 +1,9 @@
+<section class="text">
+  <div class="title"><h1>Cabeza</h1></div>
+</section>
+<section class="hero">
+  <div (mouseenter)="showAnatomy()" (mouseleave)="hideAnatomy()">
+    <img class="animal" src="https://pm1.aminoapps.com/7446/950e3f71e60c2f672d723a7674e1342121eb6104r1-527-865v2_hq.jpg" alt="Animal mitológico" />
+  </div>
+  <app-brain *ngIf="showAnatomyFlag"></app-brain>
+</section>
